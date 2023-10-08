@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600;6..12,1000&family=Nunito:wght@300;400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +7,20 @@
     font-family: 'Nunito', sans-serif;
 }
 
+body {
+    background-color: #1d1d1d;
+}
+
 header {
     width: 100%;
     height: 100px;
-    background-color: #1d1d1d;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    position: absolute;
+    z-index: 1;
 }
 
 .allItemsHeader {
@@ -27,7 +32,7 @@ header {
 }
 
 .itemHeader {
-    color: #fff;
+    color: #000;
 }
 
 li {
@@ -35,10 +40,10 @@ li {
 }
 
 .getInTouchButtonHeader {
-    color: #fff;
+    color: #000;
     padding: 12px;
     border-radius: 8px;
-    border: 1pt solid #fff;
+    border: 1pt solid #000;
     position: absolute;
     right: 36px;
 }
@@ -57,9 +62,101 @@ li {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #fff;
+    background-color: #000;
     transition: width 0.25s ease-out;
 }
 .underline-hover-effect:hover::before {
     width: 100%;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#backgroundVideoSection1 {
+    width: 100%;
+    height: calc(100%);
+    object-fit: cover;
+    filter: blur(25px);
+}
+
+.section2 {
+    display: flex;
+
+}
+
+.rightSideSection2 {
+    height: 100px;
+    width: 50%;
+    background-color: antiquewhite;
+}
+
+.leftSideSection2 {
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titleSection2 {
+    background: linear-gradient(270deg, #F00C5F -4.05%, rgba(255, 255, 255, 0.95) 132.79%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 65px;
+    max-width: 694px;
+}
+
+.titleList {
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.textList {
+    color: #fff;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    width: 500px;
+    padding-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.listDivParent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.listDiv {
+    border-bottom: 1pt solid #fff;
+    width: fit-content;
 }
