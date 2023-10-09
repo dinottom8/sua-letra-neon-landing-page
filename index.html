@@ -10,23 +10,27 @@
 <body>
     <header>
         <ul class="allItemsHeader">
-            <li class="itemHeader underline-hover-effect">HOME</li>
-            <li class="itemHeader underline-hover-effect">PRODUTO</li>
-            <li class="itemHeader underline-hover-effect">GALERIA</li>
-            <li class="itemHeader underline-hover-effect">BENEFÍCIOS</li>
+            <li class="itemHeader underline-hover-effect"><a class="linkHeader" href="#secaohome">HOME</a></li>
+            <li class="itemHeader underline-hover-effect"><a class="linkHeader" href="#secaobeneficios">BENEFÍCIOS</a></li>
+            <li class="itemHeader underline-hover-effect"><a class="linkHeader" href="#secaodireitos">DIREITOS</a></li>
+            <li class="itemHeader underline-hover-effect"><a class="linkHeader" href="#secaogaleria">GALERIA</a></li>
         </ul>
         <div class="getInTouchButtonHeader">
-            ENTRE EM CONTATO
+            <div>FALAR AGORA</div>
+            <img src="assets/images/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png" alt="" width="24px">
         </div>
     </header><!--HEADER-->
-    <div class="section1">
+    <div class="section1" id="secaohome">
       <div class="video-container">
+        <div class="divLogo">
+          <img src="assets/images/logo.svg" alt="logo" class="logo">
+        </div>
         <video autoplay muted loop id="backgroundVideoSection1">
           <source src="assets/videos/Snapinsta.app_video_221635046_472193104219822_917353162778412160_n.mp4" type="video/mp4">
         </video>
       </div>
     </div>
-    <div class="section2">
+    <div class="section2" id="secaobeneficios">
       <div class="leftSideSection2">
         <h2 class="titleSection2">REVITALIZE QUALQUER LOCAL</h2>
         <div class="listDivParent">
@@ -123,7 +127,7 @@
       </div>
       <div class="rightSideSection4"></div>
     </div>
-    <div class="cardSection">
+    <div class="cardSection" id="secaodireitos">
       <div class="cardInSection">
         <div class="cardSectionCard">
           <img class="iconCard" id="aviao" src="assets/images/airplane-fill 1.svg" alt="">
@@ -153,31 +157,72 @@
         </div>
       </div>
     </div>
-    <div class="lastSection">
+    <div class="lastSection" id="secaogaleria">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide slide1"></div>
-          <div class="swiper-slide slide2"></div>
-          <div class="swiper-slide slide3"></div>
-          <div class="swiper-slide slide4"></div>
-          <div class="swiper-slide slide5"></div>
-          <div class="swiper-slide slide6"></div>
-          <div class="swiper-slide slide7"></div>
-          <div class="swiper-slide slide8"></div>
-          <div class="swiper-slide slide9"></div>
-          <div class="swiper-slide slide10"></div>
-          <div class="swiper-slide slide11"></div>
-          <div class="swiper-slide slide12"></div>
-          <div class="swiper-slide slide13"></div>
-          <div class="swiper-slide slide14"></div>
-          <div class="swiper-slide slide15"></div>
-          <div class="swiper-slide slide16"></div>
-          <div class="swiper-slide slide17"></div>
-          <div class="swiper-slide slide18"></div>
+          <div class="swiper-slide slide1">
+            <img src="assets/images/card1.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide2">
+            <img src="assets/images/card2.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide3">
+            <img src="assets/images/card3.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide4">
+            <img src="assets/images/card4.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide5">
+            <img src="assets/images/card5.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide6">
+            <img src="assets/images/card6.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide7">
+            <img src="assets/images/card7.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide8">
+            <img src="assets/images/card8.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide9">
+            <img src="assets/images/card9.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide10">
+            <img src="assets/images/card10.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide11">
+            <img src="assets/images/card11.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide12">
+            <img src="assets/images/card12.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide13">
+            <img src="assets/images/card13.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide14">
+            <img src="assets/images/card14.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide15">
+            <img src="assets/images/card15.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide16">
+            <img src="assets/images/card16.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide17">
+            <img src="assets/images/card17.png" alt="cardImage">
+          </div>
+          <div class="swiper-slide slide18">
+            <img src="assets/images/card18.png" alt="cardImage">
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
+
+    <footer>
+      <p class="todosOsDireitos">Todos os Direitos Reservados.</p>
+      <div class="reservedSymbol">R</div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
