@@ -119,13 +119,12 @@ li {
 
 .section2 {
     display: flex;
-
 }
 
 .rightSideSection2 {
     height: 100px;
     width: 50%;
-    background-color: antiquewhite;
+    opacity: 0;
 }
 
 .leftSideSection2 {
@@ -135,6 +134,7 @@ li {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    opacity: 0;
 }
 
 .titleSection2 {

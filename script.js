@@ -1,7 +1,6 @@
-const fotos = [...document.querySelectorAll(".swiper-slide")];
-console.log(fotos)
-
-fotos.map((ft)=> {
-    ft.addEventListener("click", ()=> {
+$(document).ready(function() {
+    $(".logo").waypoint(function() {
+        $("#secao2esquerda").addClass("animate__animated animate__fadeInLeft");
+        $("#secao2direita").addClass("animate__animated animate__fadeInRight");
     })
 })
