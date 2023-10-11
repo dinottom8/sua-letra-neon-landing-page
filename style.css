@@ -167,7 +167,7 @@ li {
     font-style: normal;
     font-weight: 300;
     line-height: 18px;
-    width: 500px;
+    max-width: 500px;
     padding-bottom: 24px;
     flex-shrink: 0;
 }
@@ -366,7 +366,7 @@ footer {
 .menuMobileActive {
     width: fit-content;
     height: fit-content;
-    position: absolute;
+    position: fixed;
     background-color: white;
     z-index: 6;
     right: 0;
@@ -383,7 +383,7 @@ footer {
 
 .menuMobileModalBGActive {
     background-color: #000000a6;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -418,10 +418,36 @@ footer {
         flex-direction: column;
         gap: 12px;
     }
+
+    .section2 {
+        flex-direction: column;
+    }
+
+    .leftSideSection2 {
+        width: 100%;
+        order: 2;
+    }
+
+    .rightSideSection2 {
+        width: 100%;
+        order: 1;
+    }
+
+    .rightSideSection4 {
+        width: 100%;
+    }
+    
+    .rightSideSection3 {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .divLogo {
         width: 80%;
+    }
+
+    .cardSection {
+        display: none;
     }
 }
