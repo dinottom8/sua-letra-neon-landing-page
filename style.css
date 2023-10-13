@@ -244,16 +244,15 @@ li {
     align-items: center;
     padding-top: 40px;
     gap: 16px;
-    cursor: pointer;
     transition: .5s ease;
 }
 
-.cardSectionCard:hover {
+/* .cardSectionCard:hover {
     color: #fff !important;
     background: linear-gradient(90deg, #35B4ED, #A000F3);
     transition: .5s ease;
     transform: scale(102%);
-}
+} */
 
 .cardSection {
     display: flex;
