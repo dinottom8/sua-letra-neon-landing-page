@@ -149,6 +149,7 @@ li {
     font-weight: 900;
     line-height: 65px;
     max-width: 694px;
+
 }
 
 .titleList {
@@ -162,7 +163,6 @@ li {
 
 .textList {
     color: #fff;
-    font-family: Nunito;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -375,6 +375,11 @@ footer {
     padding: 48px;
 }
 
+.navigationButtonSwiper {
+    color: white;
+    margin: 56px;
+}
+
 .horizontalLineMenuMobile {
     width: 120px;
     height: 1px;
@@ -435,10 +440,31 @@ footer {
 
     .rightSideSection4 {
         width: 100%;
+        margin: 40px 0;
     }
     
     .rightSideSection3 {
         width: 100%;
+    }
+
+    /* #secao2direita {
+        display: none;
+    } */
+
+    #secao3direita {
+        display: none;
+    }
+
+    /* #secao4direita {
+        display: none;
+    } */
+
+    .leftSideSection2 {
+        height: fit-content;
+        width: 80%;
+        gap: 40px;
+        margin: auto;
+        margin-top: 48px;
     }
 }
 
@@ -448,6 +474,10 @@ footer {
     }
 
     .cardSection {
+        display: none;
+    }
+
+    .navigationButtonSwiper {
         display: none;
     }
 }
